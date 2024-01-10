@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 10px;
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: blueviolet;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+div {
+    height: 100px;
+    /* width: max-content; */
+    flex-grow: 1;
+    flex-basis: 100px;
+    background-color: blue;
+    order: 2;
+}
+
+div.f1{
+    flex-basis: 225px;
+}
+
+div.f4{
+    flex-basis:200px;
+    flex-shrink: 2;
+}
+
+div.f9{
+    flex-basis: 400px;
+}
+
+div.f12{
+    flex-basis: 210px;
+    order: 1;
+}
